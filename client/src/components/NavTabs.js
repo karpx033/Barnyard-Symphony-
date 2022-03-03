@@ -31,6 +31,26 @@ function NavTabs({ currentPage, handlePageChange }) {
           Song
         </a>
       </li>
+
+      <li className="nav-item">
+        <a
+          href="#login"
+          onClick={() => handlePageChange('Login')}
+          className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
+        >
+          Login
+        </a>
+      </li>
+
+      <li className="nav-item">
+        <a
+          href="#signup"
+          onClick={() => handlePageChange('Signup')}
+          className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}
+        >
+          Signup
+        </a>
+      </li>
     </ul>
   );
 }
