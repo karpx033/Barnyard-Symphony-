@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Cards from './pages/Cards';
+import Home from './pages/Home';
+import Song from './pages/Song';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   const renderPage = () => {
     if (currentPage === 'Song') {
-      return <Portfolio />;
+      return <Song />;
     }
     if (currentPage === 'Cards') {
       return <Cards />;
     }
-    return <About />;
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
