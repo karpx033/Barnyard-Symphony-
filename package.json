@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/karpx033/Barnyard-Symphony-/issues"
   },
-  "homepage": "https://github.com/karpx033/Barnyard-Symphony-#readme"
+  "homepage": "https://github.com/karpx033/Barnyard-Symphony-#readme",
+  "dependencies": {
+  }
 }
-
-
