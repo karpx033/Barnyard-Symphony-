@@ -1,18 +1,11 @@
 const { songString, Profile } = require('../models');
-const {signToken} = require('../utils/auth')
+const { AuthenticationError } = require('apollo-server-express');
+const {signToken} = require('../utils/auth');
 
 const resolvers = {
   Query: {
     songString: async () => {
       return songString.find({});
-    },
-
-    profiles: async () => {
-      return Profile.find();
-    },
-
-    profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
     },
   },
 
