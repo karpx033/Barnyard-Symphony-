@@ -5,6 +5,10 @@ export const QUERY_PROFILES = gql`
     profiles {
       _id
       name
+      songString {
+        _id
+        name
+      }
     }
   }
 `;
