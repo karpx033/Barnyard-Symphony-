@@ -1,6 +1,6 @@
 import React from 'react';
 import placeholder from '../images/placeholder.PNG';
-import cowDemo from '../../media/CowDemo.mp4';
+import cowDemo from '../media/CowDemo.mp4';
 var cowNoise = function() {
     var cowSounds = document.getElementById("cowSound");
     
