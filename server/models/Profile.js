@@ -19,6 +19,12 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  songString: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'songString',
+    },
+  ],
 });
 
 // set up pre-save middleware to create password
