@@ -1,8 +1,20 @@
 [
     {
-      "name": "JavaScript"
+      "name": "Cow",
+      "description": "A cow is white with black spots. You will usually find a cow on a farm. They produce milk.",
+      "img": "https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg",
+      "sound":"cowNoise"
     },
     {
-      "name": "HTML"
+      "name": "Chicken",
+      "description": "A Chicken is a small bird with a red beak. You can find chickens in large groups on a farm. Chickens lay eggs.",
+      "img": "https://cdn.mos.cms.futurecdn.net/BX7vjSt8KMtcBHyisvcSPK.jpg",
+      "sound": "chickenNoise"
+    },
+    {
+      "name": "Sheep",
+      "description": "A Sheep is a fluffy animal. You can find sheeps on a farm within a large patch of grass behind a fence. Sheeps produce wool.",
+      "img": "https://www.aces.edu/wp-content/uploads/2018/11/iStock-182344013.jpg",
+      "sound": "sheepNoise"
     }
 ]

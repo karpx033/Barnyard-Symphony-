@@ -4,6 +4,9 @@ const typeDefs = gql`
   type SongString {
     _id:ID
     name: String!
+    description: String!
+    img: String!
+    sound: String!
   }
 
   type Profile {
@@ -23,6 +26,7 @@ const typeDefs = gql`
     songString: [SongString] 
     profiles: [Profile]!
     profile(profileId: ID!): Profile
+    songStrings: [SongString]!
   }
 
   type Mutation {

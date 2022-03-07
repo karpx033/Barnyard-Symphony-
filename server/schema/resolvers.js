@@ -9,7 +9,10 @@ const resolvers = {
     },
     profiles: async () => {
       return Profile.find().populate('songString');
-    }
+    },
+    songStrings: async () => {
+      return songString.find({});
+    },
   },
 
   Mutation: {
@@ -20,19 +23,11 @@ const resolvers = {
       return { token, profile };
     },
     addAnimal: async (parent, { songStringId, id}) => {
-   
-        // const songString = await songString.create({
-        //   name,
-        // });
 
         return await Profile.findOneAndUpdate(
           { _id: id },
           { $addToSet: { songString:  songStringId  } }
         );
-
-        // return profile;
-
-      // throw new AuthenticationError('You need to be logged in!');
     },
     login: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
