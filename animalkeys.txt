@@ -1,0 +1,12 @@
+Cow, F3, 1s
+horse, a6-d5, 3s
+pig squeel, d5, 2s
+SheepBaa, g3, 1s
+Goat, g4, 1s
+chicken, f5, 1s
+rooster, a5, 2s
+rabbit, f5, 1s
+duck, e2, 1s
+alpaca, e2, 1s
+fox, 2s
+Turkey, d5, 1s
