@@ -21,3 +21,15 @@ export const QUERY_SINGLE_PROFILE = gql`
     }
   }
 `;
+
+export const QUERY_SONGSTRINGS = gql`
+  query songStrings {
+    songStrings{
+      name
+      _id
+      description
+      img
+      sound
+    }
+  }
+`;

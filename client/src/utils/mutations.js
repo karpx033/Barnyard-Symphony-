@@ -33,3 +33,15 @@ export const LOGIN_USER = gql`
 //     }
 //   }
 // `;
+
+export const ADD_ANIMAL = gql`
+  mutation addAnimal ($songStringId: ID!, $id: ID!) {
+    addAnimal (songStringId: $songStringId, id: $id) {
+      name
+      songString{
+        _id
+    
+      }
+    }
+  }
+`;
