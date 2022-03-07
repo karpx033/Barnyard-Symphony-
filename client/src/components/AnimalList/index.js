@@ -1,6 +1,7 @@
 import React from 'react';
 import cowDemo from '../../media/CowDemo.mp4';
 import chickenDemo from '../../media/ChickenDemo.mp4';
+import sheepDemo from '../../media/SheepDemo.mp4';
 
 var cowNoise = function () {
   var cowSounds = document.getElementById("cowSound");
@@ -12,6 +13,12 @@ var chickenNoise = function () {
   var chickenSounds = document.getElementById("chickenSound");
 
   chickenSounds.play();
+};
+
+var sheepNoise = function () {
+  var sheepSounds = document.getElementById("sheepSound");
+
+  sheepSounds.play();
 };
 
 const AnimalList = ({ songStrings, title }) => {
@@ -42,9 +49,13 @@ const AnimalList = ({ songStrings, title }) => {
               {songString.name === "Chicken" && 
               <button type="button" class="btn btn-primary" onClick={chickenNoise} style={buttonSpace}>Play Sound</button>
               }
+              {songString.name === "Sheep" && 
+              <button type="button" class="btn btn-primary" onClick={sheepNoise} style={buttonSpace}>Play Sound</button>
+              }
               <button type="button" className="btn btn-primary" style={buttonSpace}>Add to Song</button>
               <audio src={cowDemo} id="cowSound"> Your browser does not support the <code>audio</code> element.</audio>
               <audio src={chickenDemo} id="chickenSound"> Your browser does not support the <code>audio</code> element.</audio>
+              <audio src={sheepDemo} id="sheepSound"> Your browser does not support the <code>audio</code> element.</audio>
             </div>
           </div>
         ))}
