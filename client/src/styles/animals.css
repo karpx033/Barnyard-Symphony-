@@ -1,0 +1,12 @@
+.animalsbackground {
+    background-image: url('../images/barnInside.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(0, 255, 64);
+}
+
+.heightening {
+    height: 100vh;
+}
