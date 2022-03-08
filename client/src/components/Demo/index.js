@@ -1,43 +1,44 @@
 import React from 'react';
 import '../../styles/piano.css';
 
+
 import C3 from '../../pianoNotes/C3ALPACA.mp3';
-import CSHARP3 from '../../pianoNotes/C#3ALPACA.mp3';
+import CSHARP3 from '../../pianoNotes/CSHARP3ALPACA.mp3';
 import D3 from '../../pianoNotes/D3ALPACA.mp3';
 import Eb3 from '../../pianoNotes/Eb3COW.mp3';
 import E3 from '../../pianoNotes/E3COW.mp3';
 import F3 from '../../pianoNotes/F3COW.mp3';
-import FSHARP3 from '../../pianoNotes/F#3SHEEP.mp3';
+import FSHARP3 from '../../pianoNotes/FSHARP3SHEEP.mp3';
 import G3 from '../../pianoNotes/G3SHEEP.mp3';
-import GSHARP3 from '../../pianoNotes/G#3SHEEP.mp3';
+import GSHARP3 from '../../pianoNotes/GSHARP3SHEEP.mp3';
 import A3 from '../../pianoNotes/A3DUCK.mp3';
-import ASHARP3 from '../../pianoNotes/A#3DUCK.mp3';
+import ASHARP3 from '../../pianoNotes/ASHARP3DUCK.mp3';
 import B3 from '../../pianoNotes/B3DUCK.mp3';
 
 import C4 from '../../pianoNotes/C4FOX.mp3';
-import CSHARP4 from '../../pianoNotes/C#4FOX.mp3';
+import CSHARP4 from '../../pianoNotes/CSHARP4FOX.mp3';
 import D4 from '../../pianoNotes/D4FOX.mp3';
 import Eb4 from '../../pianoNotes/Eb4HORSE.mp3';
 import E4 from '../../pianoNotes/E4HORSE.mp3';
 import F4 from '../../pianoNotes/F4HORSE.mp3';
-import FSHARP4 from '../../pianoNotes/F#4GOAT.mp3';
+import FSHARP4 from '../../pianoNotes/FSHARP4GOAT.mp3';
 import G4 from '../../pianoNotes/G4GOAT.mp3';
-import GSHARP4 from '../../pianoNotes/G#4GOAT.mp3';
+import GSHARP4 from '../../pianoNotes/GSHARP4GOAT.mp3';
 import A4 from '../../pianoNotes/A4TURKEY.mp3';
-import ASHARP4 from '../../pianoNotes/A#4TURKEY.mp3';
+import ASHARP4 from '../../pianoNotes/ASHARP4TURKEY.mp3';
 import B4 from '../../pianoNotes/B4TURKEY.mp3';
 
 import C5 from '../../pianoNotes/C5PIG.mp3';
-import CSHARP5 from '../../pianoNotes/C#5PIG.mp3';
+import CSHARP5 from '../../pianoNotes/CSHARP5PIG.mp3';
 import D5 from '../../pianoNotes/D5PIG.mp3';
 import Eb5 from '../../pianoNotes/Eb5RABBIT.mp3';
 import E5 from '../../pianoNotes/E5RABBIT.mp3'
 import F5 from '../../pianoNotes/F5RABBIT.mp3';
-import FSHARP5 from '../../pianoNotes/F#5CHICKEN.mp3';
+import FSHARP5 from '../../pianoNotes/FSHARP5CHICKEN.mp3';
 import G5 from '../../pianoNotes/G5CHICKEN.mp3';
-import GSHARP5 from '../../pianoNotes/G#5CHICKEN.mp3';
+import GSHARP5 from '../../pianoNotes/GSHARP5CHICKEN.mp3';
 import A5 from '../../pianoNotes/A5ROOSTER.mp3';
-import ASHARP5 from '../../pianoNotes/A#5ROOSTER.mp3';
+import ASHARP5 from '../../pianoNotes/ASHARP5ROOSTER.mp3';
 import B5 from '../../pianoNotes/B5ROOSTER.mp3';
 
 var playC3 = function () {
@@ -47,10 +48,7 @@ var playC3 = function () {
 
 var playCSHARP3 = function () {
     var CSHARP3 = document.getElementById("CSHARP3");
-    console.log('C#3 clicked');
-    // CSHARP3.play();
-    const audio = new Audio(CSHARP3)
-    audio.play()
+    CSHARP3.play();
 };
 
 var playD3 = function () {
@@ -223,10 +221,123 @@ var playD5 = function () {
     B5.play();
   };
 
-const Demo = () => {
+var soundHandler = function(e) {
+    console.log(e)
+    if (e === "q") {
+        playC3();
+    }
+    if (e === "2") {
+        playCSHARP3();
+    }
+    if (e === "w") {
+        playD3();
+    }
+    if (e === "3") {
+        playEb3();
+    }
+    if (e === "e") {
+        playE3();
+    }
+    if (e === "r") {
+        playF3();
+    }
+    if (e === "5") {
+        playFSHARP3();
+    }
+    if (e === "t") {
+        playG3();
+    }
+    if (e === "6") {
+        playGSHARP3();
+    }
+    if (e === "y") {
+        playA3();
+    }
+    if (e === "7") {
+        playASHARP3();
+    }
+    if (e === "u") {
+        playB3();
+    }
+    if (e === "i") {
+        playC4();
+    }
+    if (e === "9") {
+        playCSHARP4();
+    }
+    if (e === "o") {
+        playD4();
+    }
+    if (e === "0") {
+        playEb4();
+    }
+    if (e === "p") {
+        playE4();
+    }
+    if (e === "[") {
+        playF4();
+    }
+    if (e === "=") {
+        playFSHARP4();
+    }
+    if (e === "]") {
+        playG4();
+    }
+    if (e === "a") {
+        playGSHARP4();
+    }
+    if (e === "z") {
+        playA4();
+    }
+    if (e === "s") {
+        playASHARP4();
+    }
+    if (e === "x") {
+        playB4();
+    }
+    if (e === "c") {
+        playC5();
+    }
+    if (e === "f") {
+        playCSHARP5();
+    }
+    if (e === "v") {
+        playD5();
+    }
+    if (e === "g") {
+        playEb5();
+    }
+    if (e === "b") {
+        playE5();
+    }
+    if (e === "n") {
+        playF5();
+    }
+    if (e === "j") {
+        playFSHARP5();
+    }
+    if (e === "m") {
+        playG5();
+    }
+    if (e === "k") {
+        playGSHARP5();
+    }
+    if (e === ",") {
+        playA5();
+    }
+    if (e === "l") {
+        playASHARP5();
+    }
+    if (e === ".") {
+        playB5();
+    }
+}
+  
+  const Demo = () => {
+      
 
     return (
-        <div id="keyboard" className="keyboard-holder" style={{ width: "840px" }}>
+        <div id="keyboard" className="keyboard-holder" tabIndex={0} onKeyDown={(e) => soundHandler(e.key)} style={{ width: "840px" }}>
 
             <div className="white key" onClick={playC3} id="KEY_C,-1" style={{ width: '40px', height: '200px', left: '0px' }}>
                 <audio src={C3} id="C3"> Your browser does not support the <code>audio</code> element.</audio>
@@ -270,7 +381,7 @@ const Demo = () => {
                     #
                 </div>
             </div>
-            <div className="white key" onCLick={playE3} id="KEY_E,-1" style={{ width: '40px', height: '200px', left: '80px' }}>
+            <div className="white key" onClick={playE3} id="KEY_E,-1" style={{ width: '40px', height: '200px', left: '80px' }}>
             <audio src={E3} id="E3"> Your browser does not support the <code>audio</code> element.</audio>
                 <div className="label">
                     <b>E</b>
@@ -301,7 +412,7 @@ const Demo = () => {
                     #
                 </div>
             </div>
-            <div className="white key" onCLick={playG3} id="KEY_G,-1" style={{ width: '40px', height: '200px', left: '160px' }}>
+            <div className="white key" onClick={playG3} id="KEY_G,-1" style={{ width: '40px', height: '200px', left: '160px' }}>
             <audio src={G3} id="G3"> Your browser does not support the <code>audio</code> element.</audio>
                 <div className="label">
                     <b>T</b>
