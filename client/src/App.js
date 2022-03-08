@@ -15,6 +15,7 @@ import Play from './pages/Song';
 import Animals from './pages/Cards';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Demo from './components/Demo';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -60,6 +61,9 @@ function App() {
               </Route>
               <Route exact path='/play'>
                 <Play />
+              </Route>
+              <Route exact path='/demo'>
+                <Demo />
               </Route>
             </div>
             <Footer />
