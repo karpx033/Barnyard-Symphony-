@@ -1,8 +1,7 @@
 import React from 'react';
-import AnimalList from '../components/AnimalList';
 import { useQuery } from '@apollo/client';
-import { QUERY_SONGSTRINGS } from '../utils/queries';
-import Demo from '../components/Demo';
+import { QUERY_PROFILE } from '../utils/queries';
+import Auth from '../utils/auth';
 
 export default function Cards() {
     const cardDiv = {
@@ -10,9 +9,16 @@ export default function Cards() {
         maxheight: "30rem",
         margin: "10px",
 
-    }
-    const { loading, data } = useQuery(QUERY_SONGSTRINGS);
-    const songStrings = data?.songStrings || [];
+    };
+    
+    const animalDiv = {
+        maxwidth: "5rem",
+    };
+
+    const { loading, data } = useQuery(QUERY_PROFILE, {
+        variables: { profileId: Auth.getProfile().data._id}
+    });
+    const profile = data?.profile || [];
     
     return (
         <div>
@@ -26,10 +32,18 @@ export default function Cards() {
                     {loading ? (
                         <div>Loading...</div>
                     ) : (
-                        <AnimalList
-                            songStrings={songStrings}
-                            title="Here's the current roster of animals..."
-                        />
+                        <div>
+                            {profile.songString && profile.songString.map((animal) => (
+                                <div className="card" style={animalDiv} key={animal._id}>
+                                <img className="card-img-top" src={animal.img} alt={"Animal"} style={animalDiv}></img>
+                                <div className="card-body">
+                                  <h5 className="card-title">{animal.name}</h5>
+                                  <p className="card-text">{animal.description}</p>
+                                  <a href="#test" className="btn btn-primary">Play Sound</a>
+                                </div>
+                              </div>
+                            ))}
+                        </div>
                     )}
                 </div>
                 <p className="lead">

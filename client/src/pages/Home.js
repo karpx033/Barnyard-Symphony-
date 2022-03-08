@@ -14,7 +14,7 @@ export default function Cards() {
             <div className="heightening">
                 <h1>Click Us</h1>
                 <Link to="/demo">
-                <img className="homeIMG" src={farmer}></img>
+                <img className="homeIMG" src={farmer} alt={"farmer"}></img>
                 </Link>
             </div>
         </div>
