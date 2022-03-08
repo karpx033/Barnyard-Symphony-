@@ -25,15 +25,6 @@ export const LOGIN_USER = gql`
   }
 `;
 
-// export const ADD_ANIMAL = gql`
-//   mutation addAnimal($name: String!) {
-//     addAnimal(name: $name) {
-//       _id
-//       name
-//     }
-//   }
-// `;
-
 export const ADD_ANIMAL = gql`
   mutation addAnimal ($songStringId: ID!, $id: ID!) {
     addAnimal (songStringId: $songStringId, id: $id) {
