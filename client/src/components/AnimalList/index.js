@@ -8,6 +8,9 @@ import { useMutation } from '@apollo/client';
 import { ADD_ANIMAL } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 
+import { useMutation } from '@apollo/client';
+import { ADD_ANIMAL } from '../../utils/mutations';
+
 var cowNoise = function () {
   var cowSounds = document.getElementById("cowSound");
 
@@ -30,6 +33,7 @@ var sheepNoise = function () {
 const AnimalList = ({ songStrings }) => {
 
   const [addAnimal, { error }] = useMutation(ADD_ANIMAL);
+
 
   const buttonSpace = {
     marginLeft: "5px",
@@ -70,6 +74,7 @@ const AnimalList = ({ songStrings }) => {
             </Carousel.Item>
           ))}
       </Carousel>
+
     </div>
   );
 };
