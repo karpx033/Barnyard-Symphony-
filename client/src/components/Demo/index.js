@@ -221,10 +221,13 @@ var playD5 = function () {
     B5.play();
   };
 
-const Demo = () => {
+  
+  
+  const Demo = () => {
+      
 
     return (
-        <div id="keyboard" className="keyboard-holder" style={{ width: "840px" }}>
+        <div id="keyboard" className="keyboard-holder" tabIndex={0} onKeyDown={() => console.log('key pressed')} style={{ width: "840px" }}>
 
             <div className="white key" onClick={playC3} id="KEY_C,-1" style={{ width: '40px', height: '200px', left: '0px' }}>
                 <audio src={C3} id="C3"> Your browser does not support the <code>audio</code> element.</audio>
