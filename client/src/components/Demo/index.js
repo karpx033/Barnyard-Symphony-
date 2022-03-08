@@ -221,13 +221,123 @@ var playD5 = function () {
     B5.play();
   };
 
-  
+var soundHandler = function(e) {
+    console.log(e)
+    if (e === "q") {
+        playC3();
+    }
+    if (e === "2") {
+        playCSHARP3();
+    }
+    if (e === "w") {
+        playD3();
+    }
+    if (e === "3") {
+        playEb3();
+    }
+    if (e === "e") {
+        playE3();
+    }
+    if (e === "r") {
+        playF3();
+    }
+    if (e === "5") {
+        playFSHARP3();
+    }
+    if (e === "t") {
+        playG3();
+    }
+    if (e === "6") {
+        playGSHARP3();
+    }
+    if (e === "y") {
+        playA3();
+    }
+    if (e === "7") {
+        playASHARP3();
+    }
+    if (e === "u") {
+        playB3();
+    }
+    if (e === "i") {
+        playC4();
+    }
+    if (e === "9") {
+        playCSHARP4();
+    }
+    if (e === "o") {
+        playD4();
+    }
+    if (e === "0") {
+        playEb4();
+    }
+    if (e === "p") {
+        playE4();
+    }
+    if (e === "[") {
+        playF4();
+    }
+    if (e === "=") {
+        playFSHARP4();
+    }
+    if (e === "]") {
+        playG4();
+    }
+    if (e === "a") {
+        playGSHARP4();
+    }
+    if (e === "z") {
+        playA4();
+    }
+    if (e === "s") {
+        playASHARP4();
+    }
+    if (e === "x") {
+        playB4();
+    }
+    if (e === "c") {
+        playC5();
+    }
+    if (e === "f") {
+        playCSHARP5();
+    }
+    if (e === "v") {
+        playD5();
+    }
+    if (e === "g") {
+        playEb5();
+    }
+    if (e === "b") {
+        playE5();
+    }
+    if (e === "n") {
+        playF5();
+    }
+    if (e === "j") {
+        playFSHARP5();
+    }
+    if (e === "m") {
+        playG5();
+    }
+    if (e === "k") {
+        playGSHARP5();
+    }
+    if (e === ",") {
+        playA5();
+    }
+    if (e === "l") {
+        playASHARP5();
+    }
+    if (e === ".") {
+        playB5();
+    }
+}
   
   const Demo = () => {
       
 
     return (
-        <div id="keyboard" className="keyboard-holder" tabIndex={0} onKeyDown={() => console.log('key pressed')} style={{ width: "840px" }}>
+        <div id="keyboard" className="keyboard-holder" tabIndex={0} onKeyDown={(e) => soundHandler(e.key)} style={{ width: "840px" }}>
 
             <div className="white key" onClick={playC3} id="KEY_C,-1" style={{ width: '40px', height: '200px', left: '0px' }}>
                 <audio src={C3} id="C3"> Your browser does not support the <code>audio</code> element.</audio>

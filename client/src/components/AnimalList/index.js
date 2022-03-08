@@ -8,8 +8,6 @@ import { useMutation } from '@apollo/client';
 import { ADD_ANIMAL } from '../../utils/mutations';
 import Auth from '../../utils/auth';
 
-import { useMutation } from '@apollo/client';
-import { ADD_ANIMAL } from '../../utils/mutations';
 
 var cowNoise = function () {
   var cowSounds = document.getElementById("cowSound");
