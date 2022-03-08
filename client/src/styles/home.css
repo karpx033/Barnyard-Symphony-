@@ -17,4 +17,16 @@
     position: fixed;
     bottom: 10px;
     margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.animaltitle {
+    display: flex;
+    justify-items: center;
+    font-size: 110px;
+    color: yellow;
+    
+    width: fit-content;
+    margin-left: 15vw;
 }
