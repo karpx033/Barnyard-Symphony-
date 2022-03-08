@@ -16,5 +16,59 @@
       "description": "A Sheep is a fluffy animal. You can find sheeps on a farm within a large patch of grass behind a fence. Sheeps produce wool.",
       "img": "https://www.aces.edu/wp-content/uploads/2018/11/iStock-182344013.jpg",
       "sound": "sheepNoise"
+    },
+    {
+      "name": "Alpaca", 
+      "description": "Alpacas are quite similar to llamas but smaller. Alpacas are fluffy. Alpacas produce fibers we use in all sorts of clothing.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/d/db/Alpaca_%2831562329701%29.jpg",
+      "sound": "alpacaNoise"
+    },
+    {
+      "name": "Duck",
+      "description": "Ducks are small birds with a yellow beak. Ducks can be found near parks and ponds. Ducks lay eggs",
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-keep-ducks-call-ducks-1615457181.jpg?resize=640:*",
+      "sound": "duckNoise"
+    },
+    {
+      "name": "Fox",
+      "description": "Foxes are orange with a white underbelly. They are wild animals that roam the woods. No one knows what the fox says.",
+      "img": "https://www.nj.gov/dep/fgw/images/wildlife/fox_gl.jpg",
+      "sound": "foxNoise"
+    },
+    {
+      "name": "Goat",
+      "description": "Goats have horns and look like sheep but less fluffy. Goats like to eat grass. Goats produce goat milk.",
+      "img": "https://cdn.britannica.com/29/529-050-6B31311A/Angora-goat.jpg",
+      "sound": "goatNoise"
+    },
+    {
+      "name": "Horse",
+      "description": "Horses are big animals and come in many different colors. Horses can run fast so people like to ride them.",
+      "img": "https://media.gq.com/photos/56e71c0b14cbe0637b261d7f/4:3/w_2260,h_1695,c_limit/horseinsuit2.jpg",
+      "sound": "horseNoise"
+    },
+    {
+      "name": "Pig",
+      "description": "Pigs are pink and like to roll in the mud. Pigs are often found on farms. Pigs produce pork.",
+      "img": "https://images.squarespace-cdn.com/content/v1/5b71e83f1aef1d3e4bbd03f2/1534201222036-JHLKSIPN8AOXD4XNLRAN/Esther_main_image_1.jpg?format=2500w",
+      "sound": "pigNoise"
+    },
+    {
+      "name": "Rabbit",
+      "description": "Rabbits are small creatures that are very agile. Rabbits come in many different colors.",
+      "img": "https://nationaltoday.com/wp-content/uploads/2021/09/International-Rabbit-Day-640x514.jpg",
+      "sound": "rabbitNoise"
+    },
+    {
+      "name": "Rooster",
+      "description": "Roosters are red birds. Roosters are the farmer's alarm clock in the morning.",
+      "img": "https://preview.redd.it/8guiijfnvcb61.jpg?auto=webp&s=a9ea9288044928d0a9c562148594920c25d42b77",
+      "sound": "roosterNoise"
+    },
+    {
+      "name": "Turkey",
+      "description": "Turkeys are big birds with a lot of feathers. Turkeys can be found both on farms and also in the wild. Turkeys produce turkey.",
+      "img": "https://assets3.thrillist.com/v1/image/2500224/792x456/scale;webp=auto;jpeg_quality=60;progressive.jpg",
+      "sound": "turkeyNoise"
     }
 ]
