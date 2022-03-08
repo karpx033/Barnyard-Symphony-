@@ -13,6 +13,9 @@ const resolvers = {
     songStrings: async () => {
       return songString.find({});
     },
+    profile: async (parent, { profileId }) => {
+      return Profile.findOne({ _id: profileId }).populate('songString');
+    }
   },
 
   Mutation: {

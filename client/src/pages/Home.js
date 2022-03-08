@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import '../styles/home.css';
 import farmer from '../images/farmanimals.png';
 
+import Auth from '../utils/auth';
+
 
 export default function Cards() {
+    console.log(Auth.getProfile().data._id)
 
     return (
         <div className="HomeBackGround">
