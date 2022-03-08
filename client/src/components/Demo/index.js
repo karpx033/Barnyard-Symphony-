@@ -41,183 +41,219 @@ import A5 from '../../pianoNotes/A5ROOSTER.mp3';
 import ASHARP5 from '../../pianoNotes/ASHARP5ROOSTER.mp3';
 import B5 from '../../pianoNotes/B5ROOSTER.mp3';
 
-var playC3 = function () {
+var playC3 =  function () {
     var C3 = document.getElementById("C3");
+    C3.currentTime=0;
     C3.play();
 };
 
 var playCSHARP3 = function () {
     var CSHARP3 = document.getElementById("CSHARP3");
+    CSHARP3.currentTime=0;
     CSHARP3.play();
 };
 
 var playD3 = function () {
     var D3 = document.getElementById("D3");
+    D3.currentTime=0;
     D3.play();
   };
 
   var playEb3 = function () {
     var Eb3 = document.getElementById("Eb3");
+    Eb3.currentTime=0;
     Eb3.play();
   };
 
   var playE3 = function () {
     var E3 = document.getElementById("E3");
+    E3.currentTime=0;
     E3.play();
   };
 
   var playF3 = function () {
     var F3 = document.getElementById("F3");
+    F3.currentTime=0;
     F3.play();
   };
 
   var playFSHARP3 = function () {
     var FSHARP3 = document.getElementById("FSHARP3");
+    FSHARP3.currentTime=0;
     FSHARP3.play();
   };
 
   var playG3 = function () {
     var G3 = document.getElementById("G3");
+    G3.currentTime=0;
     G3.play();
   };
 
   var playGSHARP3 = function () {
     var GSHARP3 = document.getElementById("GSHARP3");
+    GSHARP3.currentTime=0;
     GSHARP3.play();
   };
 
   var playA3 = function () {
     var A3 = document.getElementById("A3");
+    A3.currentTime=0;
     A3.play();
   };
 
   var playASHARP3 = function () {
     var ASHARP3 = document.getElementById("ASHARP3");
+    ASHARP3.currentTime=0;
     ASHARP3.play();
   };
 
   var playB3 = function () {
     var B3 = document.getElementById("B3");
+    B3.currentTime=0;
     B3.play();
   };
 
   var playC4 = function () {
     var C4 = document.getElementById("C4");
+    C4.currentTime=0;
     C4.play();
 };
 
 var playCSHARP4 = function () {
     var CSHARP4 = document.getElementById("CSHARP4");
+    CSHARP4.currentTime=0;
     CSHARP4.play();
 };
 
 var playD4 = function () {
     var D4 = document.getElementById("D4");
+    D4.currentTime=0;
     D4.play();
   };
 
   var playEb4 = function () {
     var Eb4 = document.getElementById("Eb4");
+    Eb4.currentTime=0;
     Eb4.play();
   };
 
   var playE4 = function () {
     var E4 = document.getElementById("E4");
+    E4.currentTime=0;
     E4.play();
   };
 
   var playF4 = function () {
     var F4 = document.getElementById("F4");
+    F4.currentTime=0;
     F4.play();
   };
 
   var playFSHARP4 = function () {
     var FSHARP4 = document.getElementById("FSHARP4");
+    FSHARP4.currentTime=0;
     FSHARP4.play();
   };
 
   var playG4 = function () {
     var G4 = document.getElementById("G4");
+    G4.currentTime=0;
     G4.play();
   };
 
   var playGSHARP4 = function () {
     var GSHARP4 = document.getElementById("GSHARP4");
+    GSHARP4.currentTime=0;
     GSHARP4.play();
   };
 
   var playA4 = function () {
     var A4 = document.getElementById("A4");
+    A4.currentTime=0;
     A4.play();
   };
 
   var playASHARP4 = function () {
     var ASHARP4 = document.getElementById("ASHARP4");
+    ASHARP4.currentTime=0;
     ASHARP4.play();
   };
 
   var playB4 = function () {
     var B4 = document.getElementById("B4");
+    B4.currentTime=0;
     B4.play();
   };
 
   var playC5 = function () {
     var C5 = document.getElementById("C5");
+    C5.currentTime=0;
     C5.play();
 };
 
 var playCSHARP5 = function () {
     var CSHARP5 = document.getElementById("CSHARP5");
+    CSHARP5.currentTime=0;
     CSHARP5.play();
 };
 
 var playD5 = function () {
     var D5 = document.getElementById("D5");
+    D5.currentTime=0;
     D5.play();
   };
 
   var playEb5 = function () {
     var Eb5 = document.getElementById("Eb5");
+    Eb5.currentTime=0;
     Eb5.play();
   };
 
   var playE5 = function () {
     var E5 = document.getElementById("E5");
+    E5.currentTime=0;
     E5.play();
   };
 
   var playF5 = function () {
     var F5 = document.getElementById("F5");
+    F5.currentTime=0;
     F5.play();
   };
 
   var playFSHARP5 = function () {
     var FSHARP5 = document.getElementById("FSHARP5");
+    FSHARP5.currentTime=0;
     FSHARP5.play();
   };
 
   var playG5 = function () {
     var G5 = document.getElementById("G5");
+    G5.currentTime=0;
     G5.play();
   };
 
   var playGSHARP5 = function () {
     var GSHARP5 = document.getElementById("GSHARP5");
+    GSHARP5.currentTime=0;
     GSHARP5.play();
   };
 
   var playA5 = function () {
     var A5 = document.getElementById("A5");
+    A5.currentTime=0;
     A5.play();
   };
 
   var playASHARP5 = function () {
     var ASHARP5 = document.getElementById("ASHARP5");
+    ASHARP5.currentTime=0;
     ASHARP5.play();
   };
 
   var playB5 = function () {
     var B5 = document.getElementById("B5");
+    B5.currentTime=0;
     B5.play();
   };
 
