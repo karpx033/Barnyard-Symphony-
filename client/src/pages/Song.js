@@ -115,7 +115,7 @@ export default function Cards() {
             <div className="jumbotron card" style={cardDiv}>
                 <h1 className="display-4">Create a Song!</h1>
                 <p className="lead">Make a song from all the animal sounds you added. It can be played like a piano!</p>
-                <Demo></Demo>
+                
                 <hr className="my-4"></hr>
                 <h3>Your Favorite Animals</h3>
                 <div className="col-12 col-md-10 my-3">
