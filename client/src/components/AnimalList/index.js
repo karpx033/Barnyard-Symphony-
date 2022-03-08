@@ -2,6 +2,8 @@ import React from 'react';
 import cowDemo from '../../media/CowDemo.mp4';
 import chickenDemo from '../../media/ChickenDemo.mp4';
 import sheepDemo from '../../media/SheepDemo.mp4';
+import Carousel from 'react-bootstrap/Carousel';
+import '../../styles/animals.css';
 
 import { useMutation } from '@apollo/client';
 import { ADD_ANIMAL } from '../../utils/mutations';
@@ -57,8 +59,38 @@ const AnimalList = ({ songStrings, title }) => {
   }
 
   return (
-    <div>
-      {songStrings &&
+    <div className="animalsbackground heightening">
+      <Carousel interval="8000000" className="caroBox" variant="dark">
+        {songStrings &&
+          songStrings.map((songString) => (
+
+            <Carousel.Item>
+
+              <img className="smallIMG" src={songString.img} alt="test"></img>
+              <h5 className='centerTxt'>{songString.name}</h5>
+              <p className='centerTxt'>{songString.description}</p>
+              <div className='btnDiv'>
+                {songString.name === "Cow" &&
+                  <button type="button" className="btn animalbtn btn-primary" onClick={cowNoise} style={buttonSpace}>Play Sound</button>
+                }
+                {songString.name === "Chicken" &&
+                  <button type="button" className="btn animalbtn btn-primary" onClick={chickenNoise} style={buttonSpace}>Play Sound</button>
+                }
+                {songString.name === "Sheep" &&
+                  <button type="button" className="btn animal btn btn-primary" onClick={sheepNoise} style={buttonSpace}>Play Sound</button>
+                }
+                <button type="button" className="btn btn-primary" style={buttonSpace}>Add to Song</button>
+              </div>
+              <audio src={cowDemo} id="cowSound"> Your browser does not support the <code>audio</code> element.</audio>
+              <audio src={chickenDemo} id="chickenSound"> Your browser does not support the <code>audio</code> element.</audio>
+              <audio src={sheepDemo} id="sheepSound"> Your browser does not support the <code>audio</code> element.</audio>
+
+            </Carousel.Item>
+          ))}
+      </Carousel>
+
+
+      {/* {songStrings &&
         songStrings.map((songString) => (
           <div className="card" style={cardDiv} value={songString._id} key={songString._id} id="id">
             <img className="card-img-top" src={songString.img} alt="test"></img>
@@ -80,7 +112,7 @@ const AnimalList = ({ songStrings, title }) => {
               <audio src={sheepDemo} id="sheepSound"> Your browser does not support the <code>audio</code> element.</audio>
             </div>
           </div>
-        ))}
+        ))} */}
     </div>
   );
 };
