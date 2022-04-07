@@ -39,11 +39,11 @@ Please Don't
 
 ## Questions
 
-My GitHub username is: karpx033
+Our GitHub usernames are: karpx033 & Juno Nguyen
 
-Link @ https://github.com/karpx033
+Link @ https://github.com/karpx033 & https://github.com/JunoNguyen
 
-Email: karxp033@gmail.com
+Email: karpx033@gmail.com & junonguyen27@gmail.com
 
 Got Questions? 
 Send me an email
